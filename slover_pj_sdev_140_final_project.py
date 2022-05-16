@@ -12,6 +12,8 @@
 #   meters: a median metric unit of length
 #   kilometers: a large metric unit of length
 
+# Here the user will select a conversion method
+
 def print_menu():
     print('01. Inches = Millimeters')
     print('02. Inches = Centimeters')
@@ -46,89 +48,90 @@ def print_menu():
     print('31. Kilometers = Yards')
     print('32. Kilometers = Miles')
     
-    
+# The user will then be prompted to insert their data for conversion
+   
 def inches_millimeters():
     inches = float (input('Enter a distance in inches: '))
     millimeters = inches / 1.609
-    print('Distance in nanometers: {0}'. format (millimeters))
+    print('Distance in millimeters: {0}'. format (millimeters))
 
 def inches_centimeters():
     inches = float (input('Enter a distance in inches: '))
     centimeters = inches * 2.54
-    print('Distance in kilometers: {0}'.format(centimeters))
+    print('Distance in centimeters: {0}'.format(centimeters))
 
 def inches_meters():
     inches = float (input('Enter a distance in inches: '))
     meters = inches / 39.37
-    print('Distance in yards: {0}'.format(meters))
+    print('Distance in meters: {0}'.format(meters))
 
 def inches_kilometers():
     inches = float (input('Enter a distance in inches: '))
     kilometers = inches / 39370
-    print('Distance in meters: {0}'.format(kilometers))
+    print('Distance in kilometers: {0}'.format(kilometers))
 
 
 def feet_millimeters():
-    inches = float (input('Enter a distance in feet: '))
-    millimeters = inches * 305
-    print('Distance in nanometers: {0}'. format (millimeters))
+    feet = float (input('Enter a distance in feet: '))
+    millimeters = feet * 305
+    print('Distance in millimeters: {0}'. format (millimeters))
 
 def feet_centimeters():
-    inches = float (input('Enter a distance in feet: '))
-    centimeters = inches * 30.48
-    print('Distance in kilometers: {0}'.format(centimeters))
+    feet = float (input('Enter a distance in feet: '))
+    centimeters = feet * 30.48
+    print('Distance in centimeters: {0}'.format(centimeters))
 
 def feet_meters():
-    inches = float (input('Enter a distance in feet: '))
-    meters = inches / 3.281
-    print('Distance in yards: {0}'.format(meters))
+    feet = float (input('Enter a distance in feet: '))
+    meters = feet / 3.281
+    print('Distance in meters: {0}'.format(meters))
 
 def feet_kilometers():
-    inches = float (input('Enter a distance in feet: '))
-    kilometers = inches / 3281
-    print('Distance in meters: {0}'.format(kilometers))
+    feet = float (input('Enter a distance in feet: '))
+    kilometers = feet / 3281
+    print('Distance in kilometers: {0}'.format(kilometers))
 
 
 def yards_millimeters():
-    inches = float (input('Enter a distance in yards: '))
+    yards = float (input('Enter a distance in yards: '))
     millimeters = yards * 914
-    print('Distance in nanometers: {0}'. format (millimeters))
+    print('Distance in millimeters: {0}'. format (millimeters))
 
 def yards_centimeters():
-    inches = float (input('Enter a distance in yards: '))
+    yards = float (input('Enter a distance in yards: '))
     centimeters = yards * 91.44
-    print('Distance in kilometers: {0}'.format(centimeters))
+    print('Distance in centimeters: {0}'.format(centimeters))
 
 def yards_meters():
-    inches = float (input('Enter a distance in yards: '))
+    yards = float (input('Enter a distance in yards: '))
     meters = yards / 1.094
-    print('Distance in yards: {0}'.format(meters))
+    print('Distance in meters: {0}'.format(meters))
 
 def yards_kilometers():
-    inches = float (input('Enter a distance in yards: '))
+    yards = float (input('Enter a distance in yards: '))
     kilometers = yards / 1094
-    print('Distance in meters: {0}'.format(kilometers))
+    print('Distance in kilometers: {0}'.format(kilometers))
 
 
 def miles_millimeters():
-    inches = float (input('Enter a distance in miles: '))
+    miles = float (input('Enter a distance in miles: '))
     millimeters = miles * 1609000
-    print('Distance in nanometers: {0}'. format (millimeters))
+    print('Distance in millimeters: {0}'. format (millimeters))
 
 def miles_centimeters():
-    inches = float (input('Enter a distance in miles: '))
+    miles = float (input('Enter a distance in miles: '))
     centimeters = miles * 160934
-    print('Distance in kilometers: {0}'.format(centimeters))
+    print('Distance in centimeters: {0}'.format(centimeters))
 
 def miles_meters():
-    inches = float (input('Enter a distance in miles: '))
+    miles = float (input('Enter a distance in miles: '))
     meters = miles * 1609
-    print('Distance in yards: {0}'.format(meters))
+    print('Distance in meters: {0}'.format(meters))
 
 def miles_kilometers():
-    inches = float (input('Enter a distance in miles: '))
+    miles = float (input('Enter a distance in miles: '))
     kilometers = miles * 1.609
-    print('Distance in meters: {0}'.format(kilometers))
+    print('Distance in kilometers: {0}'.format(kilometers))
 
 
 
@@ -215,6 +218,7 @@ def kilometers_miles():
     miles = kilometers / 1.609
     print('Distance in miles: {0}'.format(miles))
 
+# A conversion will be generated and printed for the user
 
 print_menu()
 
